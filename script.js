@@ -12,6 +12,7 @@ let interval = null;
 
 let status = "stopped";
 
+
 function stopWatch(){
 
     milliseconds++;
