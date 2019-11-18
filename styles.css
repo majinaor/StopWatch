@@ -15,3 +15,13 @@
 .buttons{
     text-align: center;
 }
+
+#startStop{
+    background-color: green;
+    color: white;
+}
+
+#reset{
+background-color: yellow;
+color: black;
+}
