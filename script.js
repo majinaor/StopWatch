@@ -22,7 +22,6 @@ function stopWatch(){
         milliseconds = 0;
         seconds++;
     }
-
     if (seconds === 60){
         seconds = 0;
         minutes++;
@@ -61,12 +60,15 @@ else{
     cell1.innerHTML = lapNumber;
     cell2.innerHTML = displayHours + ":" + displayMinutes + ":" + displaySeconds + ":" + displayMilliSeconds;
     lapNumber++;
+    const score = displayHours + ":" + displayMinutes + ":" + displaySeconds + ":" + displayMilliSeconds;
+    console.log(score)
 
 
     document.getElementById("startStop").style.backgroundColor="green";
     window.clearInterval(interval);
     document.getElementById("startStop").innerHTML = "Start";
     status = "stopped";
+    localStorage.setItem('StopwatchValue', score)
 
 }
 
